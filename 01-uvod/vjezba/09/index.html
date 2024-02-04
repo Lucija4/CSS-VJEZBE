@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1f5084;
+  color: #ccc;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #508fd2;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Ime</label>
+    <input type="text" id="fname" name="firstname" placeholder="Upišite svoje ime..">
+
+    <label for="lname">Prezime</label>
+    <input type="text" id="lname" name="lastname" placeholder="Upišite svoje prezime...">
+
+    <label for="country">Država</label>
+    <select id="country" name="country">
+      <option value="austria">Austrija</option>
+      <option value="belgium">Belgija</option>
+      <option value="denmark">Njemačka</option>
+      <option value="sweden">Švedska</option>
+      <option value="croatia">Hrvatska</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
