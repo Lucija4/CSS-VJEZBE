@@ -50,7 +50,7 @@ div {
 }
 
 .width3 {
-    width: 450px;
+    width: 500px;
 }
 
 .height3 {
@@ -58,14 +58,14 @@ div {
 }
 
 .border3 {
-    border-right: 6px double #333;
+    border-right: 8px double #333;
 }
 
 .padding3 {
     padding-left: 50px;
+    padding-right: 20px;
     padding-bottom: 50px;
 }
-
 .width4 {
     width: 2000px;
 }
@@ -80,10 +80,10 @@ div {
 }
 
 .padding4 {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .margin {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }

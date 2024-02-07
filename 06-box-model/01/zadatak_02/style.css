@@ -1,0 +1,42 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.center {
+    transform: translate(170%, 5%); /*pogledati još ovaj dio*/
+
+}
+
+/* Style for the outer square */
+.outer-square {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(216, 213, 213);
+    position: absolute;
+    border: 10px solid #5f5e5e;
+    float: center;
+}
+
+/* Style for the inner red square */
+.red-square {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(230, 124, 124);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Style for the inner blue square */
+.blue-square {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(124, 124, 229);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
