@@ -13,4 +13,5 @@ li {
 p {
     border: 1px solid #ccc;
     box-sizing: border-box;
+    display: inline-block;
 }
