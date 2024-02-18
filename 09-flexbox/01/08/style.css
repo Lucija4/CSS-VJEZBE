@@ -11,6 +11,7 @@
   .wrapper {
     border: 1px dashed #666;
     padding: 1em;
+    height: 600px;
   }
   
   .wrapper div {
@@ -21,10 +22,11 @@
     width: 30%;
     margin: 1em;
   }
-
-.flex-container {
-
+  
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; /* display:flex | inline-flex */
-    /* flex-direction: column; row | row-reverse | column | column-reverse */
     flex-wrap: wrap;
-}
+    align-content: center; /* align-content: flex-start | flex-end | center | space-between | space-around | stretch */
+  }

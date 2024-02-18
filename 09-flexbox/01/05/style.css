@@ -22,9 +22,12 @@
     margin: 1em;
   }
 
-.flex-container {
-
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; /* display:flex | inline-flex */
-    /* flex-direction: column; row | row-reverse | column | column-reverse */
-    flex-wrap: wrap;
-}
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap-reverse;
+            flex-flow: row wrap-reverse; /* flex-flow: <‘flex-direction’> || <‘flex-wrap’> */
+  }

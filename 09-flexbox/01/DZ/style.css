@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -14,10 +20,11 @@
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
+  flex-direction: column;
 }
 
 .flex-item {
-  flex: 1;
+  width: 50%;
   margin: 5px;
   background-color: #ccc;
 }
@@ -29,6 +36,6 @@
 
 .flex-item:nth-child(n+2):nth-child(-n+4),
 .flex-item:nth-child(n+6):nth-child(-n+8) {
-  flex-basis: 50%;
   height: 50px;
+  flex-basis: 50%;
 }

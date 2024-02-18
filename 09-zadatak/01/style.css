@@ -3,8 +3,8 @@ body {
     color: #333;
     font-size: 16px;
     background-color: #ddd;
-    background: url(../images/pattern.png),
-    url(../images/blossom.jpg) no-repeat;
+    background: url(../../images/pattern.png),
+    url(../../images/blossom.jpg) no-repeat;
 }
 
 h1 {
@@ -15,6 +15,6 @@ h1 {
 
 main {
     color: #ddd;
-    background: url(../images/fire.png) center center/300px no-repeat;
+    background: url(../../images/fire.png) center center/300px no-repeat;
 }
 
