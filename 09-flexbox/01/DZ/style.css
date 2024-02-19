@@ -20,7 +20,6 @@
   border: 1px solid #666;
   padding: 1em;
   text-align: center;
-  flex-direction: column;
 }
 
 .flex-item {
@@ -34,8 +33,7 @@
   height: 450px;
 }
 
-.flex-item:nth-child(n+2):nth-child(-n+4),
-.flex-item:nth-child(n+6):nth-child(-n+8) {
-  height: 50px;
-  flex-basis: 50%;
+.flex-item:nth-child(4n + 1) {
+ -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
 }
