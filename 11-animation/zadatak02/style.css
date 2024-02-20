@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+  margin: auto;
+  width: 600px;
+}
+
+div {
+  background-color: #f93;
+  border: 1px solid #333;
+  font-size: 2em;
+  line-height: 150px;
+  width: 400px;
+  height: 150px;
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+@-webkit-keyframes animacija1 {
+  0% {
+    background: orange;
+  }
+  50% {
+     transform: scaleX(2);
+     background: greenyellow;
+  }
+  100% {
+    scale: 1;
+    background: orange;
+  }
+}
+
+@keyframes animacija1 {
+  0% {
+    background: orange;
+  }
+  50% {
+     transform: scaleX(2);
+     background: greenyellow;
+  }
+  100% {
+    scale: 1;
+    background: orange;
+  }
+}
+@keyframes revertAnimation {
+  0% {
+    transform: scaleX(2);
+    background: greenyellow;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+div:nth-of-type(1) {
+  -webkit-animation: animacija1 5s paused;
+          animation: animacija1 5s paused;
+}
+
+div:nth-of-type(1):hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+div:nth-of-type(1):not(:hover) {
+  animation: revertAnimation 5s forwards; /*ne znam ovaj dio*/
+}
+
+@keyframes animacija2 {
+  100% {
+    transform: rotate(360deg) scale(1.5);
+  }
+}
+@keyframes revertAnimation2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+div:nth-of-type(2) {
+  -webkit-animation: animacija2 5s paused;
+          animation: animacija2 5s paused;
+}
+
+div:nth-of-type(2):hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+div:nth-of-type(2):not(:hover) {
+  animation: revertAnimation2 5s running; /*ne znam ovaj dio*/
+}
+
+@keyframes animacija3 {
+  0% {
+    transform: rotate(0deg)
+  }
+  50% {
+    rotate: 90deg; 
+    translate:400px 0;
+  }
+  100% {
+    rotate: 0deg; 
+    translate: 0;
+  }
+}
+div:nth-of-type(3) {
+  -webkit-animation: animacija3 5s paused infinite;
+          animation: animacija3 5s paused infinite;
+}
+div:nth-of-type(3):hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+div:nth-of-type(3):not(:hover) {
+  animation: revertAnimation3 5s running; /*ne znam ovaj dio*/
+}
+
+
+@keyframes animacija4 {
+  0% {
+    transform: scaleY(1);
+    background: orange;
+  }
+  50% {
+    transform: scaleY(1.5);
+    background: yellow;
+    translate: 0 200px;
+  }
+  100% {
+    transform: scaleY(1);
+    background: orange;
+  }
+}
+div:nth-of-type(4) {
+  -webkit-animation: animacija4 5s paused infinite;
+          animation: animacija4 5s paused infinite;
+}
+div:nth-of-type(4):hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+div:nth-of-type(4):not(:hover) {
+  animation: revertAnimation4 5s running; /*ne znam ovaj dio*/
+}
+
+
