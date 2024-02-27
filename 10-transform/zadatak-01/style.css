@@ -12,9 +12,11 @@
     text-align: center;
   }
 
-  section{border:1px solid #CCC;
-  margin:auto;
-  width:400px;}
+  section {
+  border: 1px solid #CCC;
+  margin: auto;
+  width: 400px;
+}
 
   div {
     background-color: #f93;
